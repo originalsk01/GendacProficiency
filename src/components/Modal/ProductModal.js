@@ -7,7 +7,6 @@ const ProductModal = (props) => {
   const [name, setName] = useState("");
   const [price, setPrice] = useState(0);
   const [category, setCategory] = useState(0);
-  const [editing, setEditing] = useState(props.newEdit);
 
   //If we wish to edit a product then we request its details only once to fill in our fields
   useEffect(() => {
