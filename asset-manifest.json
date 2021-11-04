@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/GendacProficiency/static/css/main.6ef77549.chunk.css",
+    "main.js": "/GendacProficiency/static/js/main.065f15cb.chunk.js",
+    "main.js.map": "/GendacProficiency/static/js/main.065f15cb.chunk.js.map",
+    "runtime-main.js": "/GendacProficiency/static/js/runtime-main.837415cd.js",
+    "runtime-main.js.map": "/GendacProficiency/static/js/runtime-main.837415cd.js.map",
+    "static/css/2.5cfdf52c.chunk.css": "/GendacProficiency/static/css/2.5cfdf52c.chunk.css",
+    "static/js/2.63440438.chunk.js": "/GendacProficiency/static/js/2.63440438.chunk.js",
+    "static/js/2.63440438.chunk.js.map": "/GendacProficiency/static/js/2.63440438.chunk.js.map",
+    "static/js/3.d3a38162.chunk.js": "/GendacProficiency/static/js/3.d3a38162.chunk.js",
+    "static/js/3.d3a38162.chunk.js.map": "/GendacProficiency/static/js/3.d3a38162.chunk.js.map",
+    "index.html": "/GendacProficiency/index.html",
+    "static/css/2.5cfdf52c.chunk.css.map": "/GendacProficiency/static/css/2.5cfdf52c.chunk.css.map",
+    "static/css/main.6ef77549.chunk.css.map": "/GendacProficiency/static/css/main.6ef77549.chunk.css.map",
+    "static/js/2.63440438.chunk.js.LICENSE.txt": "/GendacProficiency/static/js/2.63440438.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.837415cd.js",
+    "static/css/2.5cfdf52c.chunk.css",
+    "static/js/2.63440438.chunk.js",
+    "static/css/main.6ef77549.chunk.css",
+    "static/js/main.065f15cb.chunk.js"
+  ]
+}
