@@ -168,10 +168,10 @@ function App() {
         </tbody>
       </Table>
       <div style={{ marginBottom: 30 }}>
-        <Button variant="outline-primary" onClick={() => goPreviousPage()}>
+        <Button variant="primary" onClick={() => goPreviousPage()}>
           Previous Page
         </Button>
-        <Button variant="outline-primary" onClick={() => goNextPage()}>
+        <Button variant="primary" onClick={() => goNextPage()}>
           Next Page
         </Button>{" "}
         <div>
