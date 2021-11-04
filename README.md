@@ -2,6 +2,23 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Installation
+
+Before running the belwo scripts it is essential that you have NodeJS installed at: https://nodejs.org/en/
+
+Be sure to check that node is installed by opening your terminal and typing "node --version" (I currently have node version 14.17.2)
+
+Secondly please install yarn at: https://yarnpkg.com/
+
+Be sure to check that node is installed by opening your terminal and typing "yarn -v" (I currently have node version 1.22.4)
+
+After which open the terminal in the folder and run the scripts below to run the project
+
+Note: If you are unable to get these to work the project is hosted at: https://originalsk01.github.io/GendacProficiency/
+
+And the github repository is here: https://github.com/originalsk01/GendacProficiency
+
+
 ## Available Scripts
 
 In the project directory, you can run:
