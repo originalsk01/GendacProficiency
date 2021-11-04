@@ -4,7 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Installation
 
-Before running the belwo scripts it is essential that you have NodeJS installed at: https://nodejs.org/en/
+Before running the below scripts it is essential that you have NodeJS installed at: https://nodejs.org/en/
 
 Be sure to check that node is installed by opening your terminal and typing "node --version" (I currently have node version 14.17.2)
 
