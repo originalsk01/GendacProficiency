@@ -1,4 +1,3 @@
-import "bootstrap/dist/css/bootstrap.min.css";
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { ToastContainer } from "react-toastify";
@@ -113,7 +112,7 @@ function App() {
   return (
     <div className="App">
       <h2 id="Product_bar">
-        Product List{" "}
+        Gendac Product List{" "}
         <Button variant="success" onClick={() => showAddProduct()}>
           Add Product
         </Button>
