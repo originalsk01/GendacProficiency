@@ -1,8 +1,8 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import { ToastContainer, toast } from "react-toastify";
-import { Table, Button, Pagination } from "react-bootstrap";
+import { ToastContainer } from "react-toastify";
+import { Table, Button } from "react-bootstrap";
 import ProductModal from "././components/Modal/ProductModal";
 import "./App.css";
 import "react-toastify/dist/ReactToastify.css";
@@ -175,7 +175,7 @@ function App() {
         </Button>
         <Button variant="outline-primary" onClick={() => goNextPage()}>
           Next Page
-        </Button>
+        </Button>{' '}
         <div>
           Page {page} of {pageNumbers}
         </div>
