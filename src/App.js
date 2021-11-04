@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { ToastContainer } from "react-toastify";
-import { Table, Button } from "react-bootstrap";
+import { Table, Button, ButtonToolbar } from "react-bootstrap";
 import ProductModal from "././components/Modal/ProductModal";
 import "./App.css";
 import "react-toastify/dist/ReactToastify.css";
@@ -30,30 +30,29 @@ function App() {
 
   // Fetching the data we wish to use, put it in descending order so new products can be seen
   useEffect(() => {
-      fetch(
-        APIUrl +
-          "?page=" +
-          page +
-          "&pageSize=" +
-          pageSize +
-          "&ascending=" +
-          ascending
-      )
-        .then((res) => res.json())
-        .then(
-          (result) => {
-            setIsLoaded(true);
-            setProducts(result.Results);
-            setPageNumbers(result.TotalNumberOfPages);
-          },
+    fetch(
+      APIUrl +
+        "?page=" +
+        page +
+        "&pageSize=" +
+        pageSize +
+        "&ascending=" +
+        ascending
+    )
+      .then((res) => res.json())
+      .then(
+        (result) => {
+          setIsLoaded(true);
+          setProducts(result.Results);
+          setPageNumbers(result.TotalNumberOfPages);
+        },
 
-          (error) => {
-            setIsLoaded(true);
-            setError(error);
-          }
-        );
-  }, [page]);//Use Effect will rerun the query every time there is a change to the page numbers
-
+        (error) => {
+          setIsLoaded(true);
+          setError(error);
+        }
+      );
+  }, [page]); //Use Effect will rerun the query every time there is a change to the page numbers
 
   //Function used to send a delete request to the API, to delete the specific item
   function deleteProduct(name, id) {
@@ -93,18 +92,18 @@ function App() {
 
   function goNextPage() {
     //Check if we are at the end of our list if we are we loop to the front
-    if(page == pageNumbers){
-      setPage(1)
-      return
+    if (page == pageNumbers) {
+      setPage(1);
+      return;
     }
     setPage(page + 1);
   }
 
   function goPreviousPage() {
     //Check if we are at the start of our list if we are we go to the end
-    if(page == 1){
-      setPage(pageNumbers)
-      return
+    if (page == 1) {
+      setPage(pageNumbers);
+      return;
     }
     setPage(page - 1);
   }
@@ -174,10 +173,30 @@ function App() {
         </Button>
         <Button variant="outline-primary" onClick={() => goNextPage()}>
           Next Page
-        </Button>{' '}
+        </Button>{" "}
         <div>
           Page {page} of {pageNumbers}
         </div>
+        <ButtonToolbar>
+          <Button variant="primary">Primary</Button>
+          <Button variant="secondary">Secondary</Button>
+          <Button variant="success">Success</Button>
+          <Button variant="warning">Warning</Button>
+          <Button variant="danger">Danger</Button>
+          <Button variant="info">Info</Button>
+          <Button variant="light">Light</Button>
+          <Button variant="dark">Dark</Button>
+          <Button variant="link">Link</Button>
+          /* Outline version of the main variants */
+          <Button variant="outline-primary">Primary</Button>
+          <Button variant="outline-secondary">Secondary</Button>
+          <Button variant="outline-success">Success</Button>
+          <Button variant="outline-warning">Warning</Button>
+          <Button variant="outline-danger">Danger</Button>
+          <Button variant="outline-info">Info</Button>
+          <Button variant="outline-light">Light</Button>
+          <Button variant="outline-dark">Dark</Button>
+        </ButtonToolbar>
       </div>
 
       {/* Below is the modal, which shows when the button is clicked a different modal is shown depending on which button is clicked */}
